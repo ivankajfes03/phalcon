@@ -36,8 +36,8 @@ if ($users->count() > 0) {
                 <td><?php echo $user->name; ?></td>
                 <td><?php echo $user->email; ?></td>
                 <td>
-                    <?php echo $this->tag->linkTo(["delete", "Delete", 'class' => 'btn btn-danger']); ?>
-                    <?php echo $this->tag->linkTo(["edit", "Edit", 'class' => 'btn btn-warning']); ?>
+                    <?php echo $this->tag->linkTo(["index/delete/$user->id", "Delete", 'class' => 'btn btn-danger']); ?>
+                    <?php echo $this->tag->linkTo(["edit/$user->id", "Edit", 'class' => 'btn btn-warning']); ?>
                 </td>
             </tr>
         <?php } ?>
